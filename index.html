@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>카카오 쇼핑하기</title>
+    <!-- swiper slide scc -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- 외부 스타일 시트 (사용자 정의)-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/faviconV2.png">
+
+    <!-- 제리쿼리 라이브러리 js중 맨위 배치 -->
+    <script src="js/jquery-3.6.4.js"></script>
+
+    <!-- swiper slide js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!-- 외부 제이쿼리 파일 (사용자 정의)-->
+    <script src="js/kakao.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/pc_logo.png" alt="로고">
+                </a>
+            </div>
+            <div class="menu_area">
+                <nav>
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">브랜드데이</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">라이브</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li2><a href="#">카테고리</a></li>
+                    </ul>
+                </nav>
+                <div class="member">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <div class="ham_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+        <section class="main">
+            <!-- Swiper -->
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s1">
+                        <h1>차원이 다른 애슬레저룩</h1>
+                        <h2>지금 핫한 인기템!<br>안다르 ~50%</h2>
+                    </div>
+                    <div class="swiper-slide s2">
+                        <h1>갤럭시Z플립5/Z폴드5</h1>
+                        <h2>사전 판매 오픈!</h2>
+                    </div>
+
+                    <div class="swiper-slide s3">
+
+                    </div>
+                
+                </div>
+                
+                <div class="swiper-pagination"></div>
+                <div class="arrow">
+                    <a href="#"><img src="img/arrow.png" alt="화살표"></a>
+                </div>
+            </div>
+        </section>
+        <section class="today">
+            <div class="today_slide">
+                <div class="swiper swiper2">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="today_img">
+                                <img src="img/B.jpg" alt="today">
+                            </div>
+                            <div class="today_des">
+                                <p>제주우유 제주 프리미엄 무항생제우유 <br>
+                                115ml 24팩-멸균우유 흰우유 <br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 13,900원~
+                                    <span style=font-weight:100;>29,000원</span></h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="today_img">
+                                <img src="img/banner slide1-2.jpg" alt="today">
+                            </div>
+                            <div class="today_des">
+                                <p>장윤정의 코지마 브랜드데이 <br>
+                                안마의자 테라팝 등 3종 <br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 1,190,000원~
+                                    </h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="today_img">
+                                <img src="img/banner slide1-3.jpg" alt="today">
+                            </div>
+                            <div class="today_des">
+                                <p>앤드류앤코 프리미에르향수<br>
+                                3종 Set <br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 89,000원~
+                                    <span style=font-weight:100;>127,000원</span></h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="today_img">
+                                <img src="img/1000036211547_i1_1100.png" alt="today">
+                            </div>
+                            <div class="today_des">
+                                <p>스페인 꿀홍차 밀크티 <br>
+                                바닐라 카라멜 레몬녹차티<br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 5,900원~
+                                    <span style=font-weight:100;>11,800원</span></h1>
+                            </div>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+            </div>
+            <div class="today_title">
+                <div class="txt">
+                <h1>오늘의딜</h1>
+                <p>톡딜 구매시 <span style="color:gold">0.5% 적립</span> </p>
+                </div>
+                <div class="ryan"><img src="img/ryan.png" alt="라이언"></div>
+                
+
+            </div>
+        </section>
+
+        <section class="best">
+            <div class="best_title">
+                <div class="txt">
+                <h1>후기 증명 <span style=color:gold>BEST </span>톡딜</h1>
+                <p>전주 기준 톡딜 탭을 통한 판매실적과 리뷰 <br>
+                만족도를 반영하여 매주 업데이트 됩니다.</p>
+                </div>
+            </div>
+            <div class="best_slide">
+                <div class="swiper swiper3">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="best_img">
+                                <img src="img/Untitled-8.1.png" alt="today">
+                            </div>
+                            <div class="best_des">
+                                <p>호박 찹쌀약과 40개외 <br>
+                                원산지/상세설명에표시 <br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 15,900원~</h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="best_img">
+                                <img src="img/banner slide2-2.jpg" alt="today">
+                            </div>
+                            <div class="best_des">
+                                <p>골드앤 14K/18K 데일리 쥬얼리 모음<br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 1,000,000원~</h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="best_img">
+                                <img src="img/banner slide2-3.jpg" alt="today">
+                            </div>
+                            <div class="best_des">
+                                <p>갤럭시 Z플립3 256GB <br>
+                                자급제 공기계 당일 발송<br></p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 1,028,900원~</h1>
+                            </div>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <a href="#">
+                            <div class="best_img">
+                                <img src="img/1000491239886_i1_1100.jpg" alt="today">
+                            </div>
+                            <div class="best_des">
+                                <p>니봇 큐오박스 토탈케어 살균건조기</p>
+                                <h1><span style=color:#4684e9>톡딜가</span> 99,000원~</h1>
+                            </div>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+        <section class="banner">
+            <article class="product">
+                <div class="banner_txt">
+                    <h1>이런 상품은 어때요?</h1>
+                    <p>마이노멀 방탄커피 4종</p>
+                    <p>마이노멀 방탄커피에는 유화제 등 <br>
+                    첨가물을 정말 최소한 만 사용했어요. <br>
+                    이로인해 상단에 버터등 지방층이 <br>
+                    뜨거나 커피가 일부 가라앉을 수 있습니다.</p>
+                </div>
+                <div class="banner_img">
+                    <div class="banner_img1">
+                        <img src="img/coffee1.png" alt="방탄커피">
+                    </div>
+                    <div class="banner_img2">
+                        <img src="img/coffee2.png" alt="방탄커피2">
+                    </div>
+                </div>
+            </article>
+
+            <article class="bed">
+                <div class="banner_txt">
+                    <h1>사계절 알러지 케어 차렵이불</h1>
+                    <p>'완벽해'를 외치게 만드는 파르페 <br>
+                    FRARFE[파르페] 는 다양한 취향을 <br>
+                    반영한 완벽한 디저트를 의미하는 <br>
+                    파르페[parfait]의 발음과 완벽함의 추구한다<br>
+                    는 뜻을 바탕으로 다양한 고객층이 원하는 디자 <br>
+                    인과 소재를 담고있는 브랜드입니다.</p>
+                </div>
+                <div class="banner_img">
+                    <div class="banner_img1">
+                        <img src="img/section00-1.png" alt="차렵이불">
+                    </div>
+
+                    <div class="banner_img2">
+                        <img src="img/section00-2.png" alt="차렵이불2">
+                    </div>
+
+                    <div class="banner_img3">
+                        <div class="banner_img31">
+                        <img src="img/Untitled-5.1.png" alt="차렵이불3">
+                        </div>
+
+                        <div class="banner_img32">
+                        <img src="img/Untitled-5.2.png" alt="차렵이불4">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="shopping">
+                <div class="banner_txt">
+                    <h1>오직 <span style=color:blue;> 쇼핑하기 </span>에서만</h1>
+                    <h1><span style=color:red;> 특별 Travel</h1>
+                    <p>국내/해외 어디든 <br>
+                    예약이 가능한 쇼핑하기에서 <br>
+                    이번 여름 여행지 예약 하고 <br>
+                    즐거운 시간을 선물 받자 !</p>
+
+                </div>
+                <div class="banner_img">
+                    <div class="banner_img1 ani_img">
+                        <img src="img/section4-1.png" alt="여행1">
+                    </div>
+
+                    <div class="banner_img2">
+                        <img src="img/section4-2.png" alt="여행2">
+                    </div>
+
+                    <div class="banner_img3 ani_img">
+                        <img src="img/section4-3 (2).png" alt="여행3">
+                    </div>
+
+                    <div class="banner_img4 ani_img">
+                        <img src="img/section4-4.png" alt="여행4">
+                    </div>
+                </div>
+            </article>
+        </section> <!--banner-->
+        <section class="goods">
+            <div class="goods_title">
+                <h2>쇼핑 키워드</h2> <br>
+                <h1><span>선착순 쿠폰 10%</span><span><img src="img/287585.png" alt="쿠폰"></span></h1>
+                
+                
+            </div>
+            <div class="goods_photo">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/20-1.jpg" alt="1">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-2.jpg" alt="2">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-3.jpg" alt="3">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-4.jpg" alt="4">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-5.jpg" alt="5">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-6.jpg" alt="6">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-7.jpg" alt="7">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-8.jpg" alt="8">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-9.jpg" alt="9">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-10.jpg" alt="10">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-11.jpg" alt="11">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-12.jpg" alt="12">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-13.jpg" alt="13">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-14.jpg" alt="14">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-15.jpg" alt="15">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-16.jpg" alt="16">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-17.jpg" alt="17">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-18.jpg" alt="18">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-19.jpg" alt="19">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/20-20.jpg" alt="20">
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="company">
+                <div class="footer_logo">
+                    <img src="img/footer.png" alt="로고">
+                </div>
+                <div class="info">
+                    <ul>
+                        <li><a href="#">고객센터 </a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><span style="font-weight: bold;"> 개인정보처리방침</span></a></li>
+                        <li><a href="#">지식재산권보호센터</a></li>
+                        <li><a href="#">안전거래센터</a></li>
+                    </ul>
+                </div>
+                <address>
+                    (주)카카오대표이사 : 홍은택주소 : 제주특별자치도 제주시 첨단로 242 <br>
+                    사업자등록번호 : 120-81-47521통신판매업신고 : 제2015 - 제주아라 - 0032호 호스팅 사업자 : (주)카카오 <br>
+                    이메일 : cs.shopping@kakaocorp.com 고객센터 : 1544-5664 (통화료 발생 / 평일 09:00~18:00) 톡 상담하기 (평일 09:00~18:00) <br>
+                    <br>
+                    Copyright © Kakao Corp. All rights reserved <br>
+                    <br>
+                    (주)카카오에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이 포함되어 있습니다. <br>
+                    개별판매자가 판매하는 상품에 대해 (주)카카오는 통신중개판매업자로서 통신판매의 당사자가 아니며 <br> 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                </address>
+
+            </div>
+            <div class="custom">
+                <h3>고객센터 바로가기</h3>
+                <div class="custom_li">
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                        <li><a href="#">카카오톡 문의 </a></li>
+                    </ul>
+                </div>
+                <div class="tel">
+                    <p><img src="img/call.png" alt="전화"></p>
+                    <p>1544-5664</p>
+                </div>
+                <div class="office_hours">
+                    <p>톡 상담하기 : 평일&nbsp;09:00~ 18:00</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- 팝업 갤러라 -->
+    <div class="popup">
+        <div class="container"></div>
+        <div class="close_btn">
+            <a href="#">
+                <img src="img/closebutton.png" alt="닫기">
+            </a>
+        </div>
+    </div>
+    <a id="MOVE_TOP_BTN" href="#"><img src="img/topb.png" alt="탑버튼"></a>
+
+</body>
+</html>
